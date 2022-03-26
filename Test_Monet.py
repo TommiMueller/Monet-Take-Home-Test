@@ -15,12 +15,12 @@ cookies_button.click()
 
 
 
-## Suchleiste
+# Suchleiste
 searchbar = browser.find_element_by_xpath('/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input')
 searchbar.click()
 searchbar.send_keys('Amazon Ratenzahlung', Keys.ENTER)
 
-## Suchergebnis
+# Suchergebnis
 first_result = browser.find_element_by_xpath('//*[@id="rso"]/div[1]/div/div/div[1]/div/div/div[1]/div[1]/div/a/h3')
 print(first_result.text)
 first_result.click()
